@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BLACKPINK</title>
+        <link rel="shortcut icon" href="./img/bp_logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="login.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+            rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <a href="index.html" class="logo"><img src="./img/bp_logo.png"
+                    width="100px"></a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Member</a></li>
+                    <li><a href="#">Song</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </nav>
+
+            <div class="icons">
+                <ul>
+                    <li><a href="#" id="menu"><i class="ri-menu-line"></i></a></li>
+                    <li><a href="#"><i class="ri-heart-fill"></i></a></li>
+                    <li><a href="#"><i class="ri-user-fill"></i></a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="login active">
+            <div class="image"></div>
+            <div class="form-box login-form">
+                <i class="ri-close-circle-line"></i>
+                <h2>Login <i class="ri-login-circle-line"></i></h2>
+                <form>
+                    <div class="input-box">
+                        <label>Email</label>
+                        <input type="email">
+                        <i class="ri-mail-line"></i>
+                    </div>
+                    <div class="input-box">
+                        <label>Password</label>
+                        <input type="password">
+                        <i class="ri-key-line"></i>
+                    </div>
+                    <div class="remember-forget">
+                        <label class="checkmark"><input type="checkbox">
+                            Remember me</label>
+                        <a href="#">Forget Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account?<a href="#"
+                                class="register-link"> Register </a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
