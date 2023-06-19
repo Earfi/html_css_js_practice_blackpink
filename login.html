@@ -9,17 +9,22 @@
         <link
             href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
             rel="stylesheet">
+
     </head>
     <body>
+
+        <!-- navbar start -->
+
         <header class="header">
             <a href="index.html" class="logo"><img src="./img/bp_logo.png"
                     width="100px"></a>
             <nav class="navbar">
                 <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Member</a></li>
-                    <li><a href="#">Song</a></li>
-                    <li><a href="#">News</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#member">Member</a></li>
+                    <li><a href="#song">Song</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#products">Products</a></li>
                 </ul>
             </nav>
 
@@ -32,35 +37,193 @@
             </div>
         </header>
 
-        <div class="login active">
-            <div class="image"></div>
-            <div class="form-box login-form">
-                <i class="ri-close-circle-line"></i>
-                <h2>Login <i class="ri-login-circle-line"></i></h2>
-                <form>
-                    <div class="input-box">
-                        <label>Email</label>
-                        <input type="email">
-                        <i class="ri-mail-line"></i>
-                    </div>
-                    <div class="input-box">
-                        <label>Password</label>
-                        <input type="password">
-                        <i class="ri-key-line"></i>
-                    </div>
-                    <div class="remember-forget">
-                        <label class="checkmark"><input type="checkbox">
-                            Remember me</label>
-                        <a href="#">Forget Password?</a>
-                    </div>
-                    <button type="submit" class="btn">Login</button>
-                    <div class="login-register">
-                        <p>Don't have an account?<a href="#"
-                                class="register-link"> Register </a></p>
-                    </div>
-                </form>
+        <!-- navbar end -->
+
+        <!-- login start -->
+
+        <div class="container">
+            <div class="content"></div>
+
+            <div class="login-box">
+                <h1><i class="ri-close-circle-line"></i></h1>
+                <div class="form-box login">
+                    <form action="#">
+                        <h2>Sign In</h2>
+
+                        <div class="input-box">
+                            <span class="icon"><i class="ri-mail-fill"></i></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><i class="ri-lock-fill"></i></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+
+                        <div class="remember-forgot">
+                            <label><input type="checkbox"> Remember me </label>
+                            <a href="#">Forgot password?</a>
+                        </div>
+
+                        <button type="submit" class="btn">Sign In</button>
+
+                        <div class="login-register">
+                            <p>Don't have an accout? <a href="#"
+                                    class="go-register-link">Sign Up</a></p>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="form-box register">
+                    <form action="#">
+                        <h2>Sign Up</h2>
+
+                        <div class="input-box">
+                            <span class="icon"><i class="ri-user-fill"></i></span>
+                            <input type="text" required>
+                            <label>Username</label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><i class="ri-mail-fill"></i></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><i class="ri-lock-fill"></i></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+
+                        <div class="remember-forgot">
+                            <label><input type="checkbox"> I agree to the term &
+                                conditions </label>
+                        </div>
+
+                        <button type="submit" class="btn">Sign Up</button>
+
+                        <div class="login-register">
+                            <p>Already have an account? <a href="#"
+                                    class="go-login-link">Sign In</a></p>
+                        </div>
+
+                    </form>
+                </div>
             </div>
         </div>
+
+        <!-- login end -->
+
+        <!-- home start -->
+
+        <swiper-container class="mySwiper" pagination="true"
+            space-between="30"
+            centered-slides="true" autoplay-delay="2500"
+            autoplay-disable-on-interaction="false" id="home">
+            <swiper-slide class="slide">
+                <img src="/img/slide-home/slide1.jpg">
+            </swiper-slide>
+            <swiper-slide class="slide">
+                <img src="/img/slide-home/slide2.jpg">
+            </swiper-slide>
+            <swiper-slide class="slide">
+                <img src="/img/slide-home/slide3.jpg">
+            </swiper-slide>
+            <swiper-slide class="slide">
+                <img src="/img/slide-home/slide4.jpg">
+            </swiper-slide>
+            <swiper-slide class="slide">
+                <img src="/img/slide-home/slide5">
+            </swiper-slide>
+        </swiper-container>
+
+        <!-- home end -->
+
+        <!-- member start -->
+        <section class="member" id="member">
+            <h1 class="heading">Member</h1>
+            <center><p class="sub-heading"> ~ เกิร์ลกรุปเกาหลีใต้
+                    สังกัดวายจีเอนเตอร์เทนเมนต์
+                    ประกอบด้วยสมาชิกจำนวนสี่คน เปิดตัวอย่างเป็นทางการเมื่อวันที่
+                    8 สิงหาคม 2016 ~ </p></center>
+            <div class="list-item">
+                <div class="item">
+                    <div class="image">
+                        <img src="img/member/jisoo.jpeg" width="200px">
+                    </div>
+                    <h1>Kim Jisoo</h1>
+                    <a class="more-info" href="#"><button class="btn">Read more</button></a>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="img/member/jennie.jpg" width="200px">
+                    </div>
+                    <h1>Jennie Kim</h1>
+                    <a class="more-info" href="#"><button class="btn">Read more</button></a>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="img/member/rose.jpg" width="200px">
+                    </div>
+                    <h1>Roseanne park</h1>
+                    <a class="more-info" href="#"><button class="btn">Read more</button></a>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="img/member/lisa.png" width="200px">
+                    </div>
+                    <h1>Lisa Manoban</h1>
+                    <a class="more-info" href="#"><button class="btn">Read more</button></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- member end -->
+
+        <!-- song start -->
+        <section class="song" id="song">
+            <div class="list-item list-video">
+                <h1 class="heading">Song</h1>
+                <center><p class="sub-heading"> ~ ~ </p></center>
+                <div class="iframe">
+                    <iframe class="item" width="300" height="200"
+                        src="https://www.youtube.com/embed/cbUDv7ILQZM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <iframe class="item" width="300" height="200"
+                        src="https://www.youtube.com/embed/pGQzt0VEP14"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <iframe class="item" width="300" height="200"
+                        src="https://www.youtube.com/embed/pDP9SEP7vCo"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- song end -->
+
+        <!-- news start -->
+        <section class="news" id="news">
+            <h1 class="heading">News World Tour</h1>
+            <div class="list-item">
+                <img src="./img/news/news1.jpg" width="300px">
+                <img src="./img/news/news2" width="300px">
+                <img src="./img/news/news3" width="300px">
+            </div>
+        </section>
+        <!-- news end -->
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 
         <script src="main.js"></script>
     </body>
